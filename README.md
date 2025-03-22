@@ -2,13 +2,13 @@
 
 A Go implementation of a tool to estimate time spent on a git repository based on commit history.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 go install github.com/trinhminhtriet/git-hours/cmd/git-hours@latest
 ```
 
-## Usage
+## 💡 Usage
 
 ```bash
 git-hours [options]
@@ -85,3 +85,18 @@ The tool outputs JSON with the following structure:
 - Cannot analyze shallow copies. Run `git fetch --unshallow` first if needed.
 - Time estimation is based on commit dates and configured time windows
 - Merge commits can be excluded from the calculation
+
+## 🤝 How to contribute
+
+We welcome contributions!
+
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b my-feature`;
+- Commit your changes: `git commit -m "feat: my new feature"`;
+- Push to your branch: `git push origin my-feature`.
+
+Once your pull request has been merged, you can delete your branch.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
