@@ -5,7 +5,7 @@ A Go implementation of a tool to estimate time spent on a git repository based o
 ## 🚀 Installation
 
 ```bash
-go install github.com/trinhminhtriet/git-hours/cmd/git-hours@latest
+go install github.com/trinhminhtriet/git-hours@latest
 ```
 
 ## 💡 Usage
