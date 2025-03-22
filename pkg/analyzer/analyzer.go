@@ -96,7 +96,7 @@ func AnalyzeRepository(config *Config) (Result, error) {
 
 	for email, dates := range authorCommits {
 		hours := estimateHours(dates, config)
-		name := getAuthorName(email, dates[0])
+		name := getAuthorName(email)
 
 		result[email] = AuthorWork{
 			Name:    name,
@@ -144,7 +144,7 @@ func estimateHours(dates []time.Time, config *Config) int {
 }
 
 // getAuthorName extracts the author name from the first commit
-func getAuthorName(email string, firstCommitDate time.Time) string {
+func getAuthorName(email string) string {
 	// In a real implementation, we would store the author name from the first commit
 	// For now, just return the email as the name
 	return email
