@@ -20,7 +20,7 @@ else
   TAG_NAME="$NEW_VERSION-$GIT_BRANCH"
 fi
 
-# Create the new version.go content
+mkdir -p internal
 VERSION_FILE_CONTENT="package internal
 
 var (
